@@ -1,18 +1,11 @@
-import {Component, ViewEncapsulation, OnInit, OnDestroy, APPLICATION_COMMON_PROVIDERS } from 'angular2/core';
-import {CORE_DIRECTIVES, COMMON_DIRECTIVES, FORM_BINDINGS, COMMON_PIPES, FORM_DIRECTIVES} from 'angular2/common';
+import {Component} from 'angular2/core';
 
 @Component({
   selector: 'about',
-  providers: [APPLICATION_COMMON_PROVIDERS],
-  template: `
-    <div>This is an application starter written by {{name}}</div>
-  `,
-  encapsulation: ViewEncapsulation.None,
-  directives: [CORE_DIRECTIVES, COMMON_DIRECTIVES, FORM_DIRECTIVES],
-  pipes: [COMMON_PIPES]
+  template: require('./about.tpl')()
 })
 
-export default class About implements OnInit, OnDestroy  {
+export default class About {
   public name: string;
   constructor() {
     this.name = 'Colin';

@@ -12,8 +12,4 @@ exports.config =
     stylesheets:
       joinTo: 'app.css'
     templates:
-      joinTo: 'app.js'
-  plugins:
-    brunchTypescript:
-      emitDecoratorMetadata: true
-      experimentalDecorators: true
+      joinTo: 'main.js'

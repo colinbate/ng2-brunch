@@ -18,17 +18,21 @@ import About from './about';
   pipes: [],
   styles: [`
     nav ul {
-      display: inline;
       list-style-type: none;
-      margin: 0;
+      margin: 1em 0;
       padding: 0;
-      width: 60px;
     }
     nav li {
-      display: inline;
+      display: inline-block;
+      padding: 0.25em;
     }
     nav li.active {
       background-color: lightgray;
+    }
+    footer {
+      margin-top: 1em;
+      border-top: 1px solid #ccc;
+      padding-top: 0.5em;
     }
   `],
   template: `
@@ -36,10 +40,10 @@ import About from './about';
       <nav>
         <h1>Hello {{ name }}</h1>
         <ul>
-          <li>
+          <li router-active="active">
             <a [routerLink]=" ['Home'] ">Home</a>
           </li>
-          <li>
+          <li router-active="active">
             <a [routerLink]=" ['About'] ">About</a>
           </li>
         </ul>
@@ -51,7 +55,6 @@ import About from './about';
     <footer>
       Brunch for Angular 2 by <a [href]="url">Colin Bate</a>
     </footer>
-    <about></about>
   `
 })
 @RouteConfig([
