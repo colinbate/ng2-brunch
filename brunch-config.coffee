@@ -2,8 +2,6 @@ exports.config =
   # See http://brunch.io/#documentation for docs.
   npm:
     enabled: true
-    globals:
-      Reflect: 'es7-reflect-metadata/dist/browser'
   files:
     javascripts:
       joinTo:
