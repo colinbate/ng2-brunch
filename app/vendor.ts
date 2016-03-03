@@ -1,6 +1,7 @@
 import 'es6-shim';
 import 'es6-promise';
-import 'zone.js/lib/browser/zone-microtask';
+import 'zone.js';
+import 'reflect-metadata';
 
 if ('production' === 'BRUNCH_ENVIRONMENT') {
   let ngCore = require('angular2/core');
