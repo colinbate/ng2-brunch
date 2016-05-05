@@ -15,6 +15,9 @@ import {About} from './about';
   directives: [...ROUTER_DIRECTIVES, About],
   pipes: [],
   styles: [`
+    :host {
+      font-family: sans-serif;
+    }
     nav ul {
       list-style-type: none;
       margin: 1em 0;
@@ -57,7 +60,7 @@ import {About} from './about';
 })
 @Routes([
   new Route({path: '/', component: Home}),
-  new Route({path: '/about', component: About})
+  new Route({path: 'about', component: About})
 ])
 export class App {
   name: string = 'Brunch for Angular 2';
