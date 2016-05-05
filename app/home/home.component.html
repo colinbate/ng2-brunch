@@ -1,0 +1,5 @@
+<div>
+  <div>Your Content Here</div>
+  <input type="text" [value]="title.value" (input)="title.value = $event.target.value">
+  <pre>this.test = {{ title | json }}</pre>
+</div>

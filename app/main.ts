@@ -1,14 +1,15 @@
 import './vendor';
-import {provide} from 'angular2/core';
-import {bootstrap} from 'angular2/platform/browser';
-import {ROUTER_PROVIDERS, LocationStrategy, PathLocationStrategy} from 'angular2/router';
-import {HTTP_PROVIDERS} from 'angular2/http';
+import {provide} from '@angular/core';
+import {bootstrap} from '@angular/platform-browser-dynamic';
+import {LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {ROUTER_PROVIDERS} from '@angular/router';
+import {HTTP_PROVIDERS} from '@angular/http';
 
 /*
  * App Component
  * our top level component that holds all of our components
  */
-import {App} from './app';
+import {App} from './app.component';
 
 /*
  * Bootstrap our Angular app with a top level component `App` and inject

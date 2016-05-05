@@ -5,6 +5,9 @@ exports.config = {
       joinTo: {
         'vendor.js': /^node_modules/,
         'main.js': /^app/
+      },
+      order: {
+        after: [/\.html$/, /\.css$/]
       }
     },
     stylesheets: {
