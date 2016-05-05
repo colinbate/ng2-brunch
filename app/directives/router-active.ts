@@ -1,8 +1,11 @@
-import {Router} from 'angular2/router';
-import {isPresent} from 'angular2/src/facade/lang';
-import {Directive, Query, QueryList, Attribute, ElementRef, Renderer} from 'angular2/core';
-import {Instruction, RouterLink} from 'angular2/router';
+import {Router} from '@angular/router';
+import {Directive, Query, QueryList, Attribute, ElementRef, Renderer} from '@angular/core';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 
+const RouterLink = ROUTER_DIRECTIVES[1];
+const isPresent = (obj) => {
+  return obj !== undefined && obj !== null;
+}
 /**
  * RouterActive dynamically finds the first element with routerLink and toggles the active class
  *
@@ -28,8 +31,8 @@ export class RouterActive {
     @Query(RouterLink) routerLink: QueryList<RouterLink>,
     @Attribute('router-active') routerActiveAttr: string) {
 
-    router.subscribe(() => {
-      let active = (<any>routerLink).first.isRouteActive;
+    router.changes.subscribe(() => {
+      let active = (<any>routerLink).first.isActive;
       renderer.setElementClass(element.nativeElement, this._attrOrProp(), active);
     });
   }
