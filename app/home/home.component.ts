@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FORM_DIRECTIVES} from '@angular/common';
 
 @Component({
@@ -10,7 +10,7 @@ import {FORM_DIRECTIVES} from '@angular/common';
   styles: [],
   template: require('./home.component.html')()
 })
-export default class Home {
+export default class HomeComponent implements OnInit {
   public title: any;
   constructor() {
     this.title = { value: 'Angular 2' };

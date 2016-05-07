@@ -10,7 +10,8 @@
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build",
-    "build:prod": "brunch build --production"
+    "build:prod": "brunch build --production",
+    "test": "tslint app/**/*.ts"
   },
   "license": "MIT",
   "keywords": [
@@ -43,10 +44,12 @@
     "brunch": "2.5.3",
     "brunch-typescript": "1.8.1",
     "clean-css-brunch": "^2.0.0",
+    "codelyzer": "0.0.19",
     "css-brunch": "^2.6.1",
     "environment-brunch": "^1.0.0",
     "html-brunch": "^1.6.1",
     "javascript-brunch": "^2.0.0",
+    "tslint": "^3.9.0",
     "typescript": "^1.8.10",
     "uglify-js-brunch": "^2.0.1"
   }
