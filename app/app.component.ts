@@ -4,6 +4,7 @@ import {FORM_PROVIDERS} from '@angular/common';
 
 import {Home} from './home';
 import {About} from './about';
+import {NavBar} from './navbar.component';
 
 /*
  * App Component
@@ -12,23 +13,14 @@ import {About} from './about';
 @Component({
   selector: 'app',
   providers: [...FORM_PROVIDERS],
-  directives: [...ROUTER_DIRECTIVES, About],
+  directives: [...ROUTER_DIRECTIVES, NavBar],
   pipes: [],
   styles: [`
     :host {
       font-family: sans-serif;
     }
-    nav ul {
-      list-style-type: none;
-      margin: 1em 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      padding: 0.25em;
-    }
-    nav .active {
-      background-color: lightgray;
+    header, footer, main {
+      margin: 0 1em;
     }
     footer {
       margin-top: 1em;
@@ -38,18 +30,9 @@ import {About} from './about';
   `],
   template: `
     <header>
-      <nav>
-        <h1>Hello {{ name }}</h1>
-        <ul>
-          <li>
-            <a [routerLink]="['']">Home</a>
-          </li>
-          <li>
-            <a [routerLink]="['about']">About</a>
-          </li>
-        </ul>
-      </nav>
+      <h1>Hello {{ name }}</h1>
     </header>
+    <navbar></navbar>
     <main>
       <router-outlet></router-outlet>
     </main>
@@ -59,7 +42,7 @@ import {About} from './about';
   `
 })
 @Routes([
-  new Route({path: '/', component: Home}),
+  new Route({path: '', component: Home}),
   new Route({path: 'about', component: About})
 ])
 export class App {
