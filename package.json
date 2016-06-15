@@ -12,7 +12,7 @@
     "postinstall": "typings install",
     "build": "brunch build",
     "build:prod": "brunch build --production",
-    "test": "tslint app/**/*.ts && tsc --noEmit"
+    "test": "tsc --noEmit && tslint app/**/*.ts app/*.ts"
   },
   "license": "MIT",
   "keywords": [
