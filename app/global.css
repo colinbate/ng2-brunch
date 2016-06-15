@@ -1,3 +1,8 @@
+/* This file contains global CSS which isn't
+   scoped to a particular module. 
+   You can control which files are sent to app.css
+   in the brunch-config.js file. */
+
 body, html {
   padding: 0;
   margin: 0;

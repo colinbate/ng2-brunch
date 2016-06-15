@@ -2,7 +2,7 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'about',
-  template: require('./about.component.html')()
+  template: require('./about.component.html')
 })
 
 export default class AboutComponent implements OnInit, OnDestroy {

@@ -7,8 +7,8 @@ import {FORM_DIRECTIVES} from '@angular/common';
     ...FORM_DIRECTIVES
   ],
   pipes: [],
-  styles: [],
-  template: require('./home.component.html')()
+  styles: [require('./home.component.css')],
+  template: require('./home.component.html')
 })
 export default class HomeComponent implements OnInit {
   public title: any;
@@ -17,7 +17,6 @@ export default class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('hello Home component');
+    console.log('Hello Home component');
   }
-
 }

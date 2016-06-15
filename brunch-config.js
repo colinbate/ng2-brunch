@@ -16,5 +16,11 @@ exports.config = {
     templates: {
       joinTo: 'main.js'
     }
+  },
+  plugins: {
+    inlineCss: {
+      html: true,
+      passthrough: [/^node_modules/, 'app/global.css']
+    }
   }
 };

@@ -1,0 +1,11 @@
+/* CSS in these files are inlined into the JavaScript.
+ * By default Angular 2 limits them so they only apply
+ * to the component they belong to.
+ * Look at `encapsulation` if you want to change that.
+ */
+pre {
+  border: 1px solid #666;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 1em;
+}
