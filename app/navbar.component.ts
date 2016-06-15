@@ -24,7 +24,7 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
       display: inline-block;
     }
     nav .active {
-      
+
       background-color: #069;
       color: #fff;
     }
@@ -42,9 +42,9 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
     </nav>
   `
 })
-export class NavBar {
+export class NavBarComponent {
   constructor(public loc: Location) {}
-  
+
   isActive(path: string) {
     return (this.loc.path() || '/') === path;
   }

@@ -9,14 +9,14 @@ import {HTTP_PROVIDERS} from '@angular/http';
  * App Component
  * our top level component that holds all of our components
  */
-import {App} from './app.component';
+import {AppComponent} from './app.component';
 
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
  * our Services and Providers into Angular's dependency injection
  */
 document.addEventListener('DOMContentLoaded', function main() {
-  bootstrap(App, [
+  bootstrap(AppComponent, [
     ...HTTP_PROVIDERS,
     ...ROUTER_PROVIDERS,
     provide(LocationStrategy, { useClass: PathLocationStrategy })

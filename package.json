@@ -9,9 +9,10 @@
   },
   "scripts": {
     "start": "brunch watch --server",
+    "postinstall": "typings install",
     "build": "brunch build",
     "build:prod": "brunch build --production",
-    "test": "tslint app/**/*.ts"
+    "test": "tslint app/**/*.ts && tsc --noEmit"
   },
   "license": "MIT",
   "keywords": [
@@ -50,6 +51,7 @@
     "javascript-brunch": "^2.0.0",
     "tslint": "^3.11.0",
     "typescript": "^1.8.10",
+    "typings": "^1.1.0",
     "uglify-js-brunch": "^2.0.1"
   }
 }

@@ -32,3 +32,6 @@ public/
 
 # Bower stuff.
 bower_components/
+
+# Typings
+typings/

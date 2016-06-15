@@ -65,8 +65,8 @@
     "component-selector-name": [true, "kebab-case"],
     "directive-selector-type": [true, "attribute"],
     "component-selector-type": [true, "element"],
-    "directive-selector-prefix": [true, "sg"],
-    "component-selector-prefix": [true, "sg"],
+    "directive-selector-prefix": [true, "changeme"],
+    "component-selector-prefix": [true, "changeme"],
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
     "use-host-property-decorator": true,
@@ -76,7 +76,7 @@
     "no-forward-ref" :true,
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
-    "pipe-naming": [true, "camelCase", "sg"],
+    "pipe-naming": [true, "camelCase", "changeme"],
     "component-class-suffix": true,
     "directive-class-suffix": true
   }
