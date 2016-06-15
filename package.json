@@ -2,7 +2,7 @@
   "name": "ng2-brunch",
   "description": "Brunch with Angular 2",
   "author": "Colin Bate <colin@colinbate.com>",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/colinbate/ng2-brunch"
