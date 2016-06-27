@@ -1,8 +1,8 @@
 import './vendor';
 import {provide} from '@angular/core';
+import {disableDeprecatedForms, provideForms} from '@angular/forms';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 import {LocationStrategy, PathLocationStrategy} from '@angular/common';
-import {ROUTER_PROVIDERS} from '@angular/router';
 import {HTTP_PROVIDERS} from '@angular/http';
 
 /*
@@ -10,6 +10,7 @@ import {HTTP_PROVIDERS} from '@angular/http';
  * our top level component that holds all of our components
  */
 import {AppComponent} from './app.component';
+import {APP_ROUTER_PROVIDERS} from './app.routes';
 
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
@@ -17,8 +18,10 @@ import {AppComponent} from './app.component';
  */
 document.addEventListener('DOMContentLoaded', function main() {
   bootstrap(AppComponent, [
-    ...HTTP_PROVIDERS,
-    ...ROUTER_PROVIDERS,
+    HTTP_PROVIDERS,
+    APP_ROUTER_PROVIDERS,
+    disableDeprecatedForms(),
+    provideForms(),
     provide(LocationStrategy, { useClass: PathLocationStrategy })
   ])
   .catch(err => console.error(err));
