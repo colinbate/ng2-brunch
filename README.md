@@ -2,14 +2,14 @@
 
 [![Join the chat at https://gitter.im/colinbate/ng2-brunch](https://badges.gitter.im/colinbate/ng2-brunch.svg)](https://gitter.im/colinbate/ng2-brunch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is an Angular 2 (RC 3) application, built with [Brunch](http://brunch.io).
+This is an Angular 2 (RC 4) application, built with [Brunch](http://brunch.io).
 
 It uses the new [Angular 2 Forms][af] and [Component Router][cr]
 
 [af]: https://docs.google.com/document/u/0/d/1RIezQqE4aEhBRmArIAS1mRIZtWFf6JxN_7B4meyWK0Y/pub
 [cr]: https://angular.io/docs/ts/latest/guide/router.html
 
-> Note that this version of Angular 2 has new router and forms packages. The router is still in Alpha.
+> Note that this version of Angular 2 has new router and forms packages. The router is still in Beta.
 
 ## Getting started
 * Install (if you don't have them):
