@@ -34,4 +34,11 @@ public/
 bower_components/
 
 # Typings
-typings/
+# typings/
+typings/globals
+typings/index.d.ts
+!typings/brunch-require.d.ts
+
+# Intelij IDE
+.idea/
+*.iml
