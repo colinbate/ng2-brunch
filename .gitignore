@@ -41,6 +41,7 @@ typings/index.d.ts
 
 # no compiled js except brunch-config.js
 *.js
+*.js.map
 !brunch-config.js
 
 # Intelij IDE
