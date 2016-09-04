@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/colinbate/ng2-brunch](https://badges.gitter.im/colinbate/ng2-brunch.svg)](https://gitter.im/colinbate/ng2-brunch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is an Angular 2 (RC 4) application, built with [Brunch](http://brunch.io).
+This is an Angular 2 (RC 5) application, built with [Brunch](http://brunch.io).
 
 It uses the new [Angular 2 Forms][af] and [Component Router][cr]
 
@@ -23,3 +23,7 @@ It uses the new [Angular 2 Forms][af] and [Component Router][cr]
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
     * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
+    
+* Test(Linux & Macosx):
+    * Export the local path to your current path with `export PATH=./node_modules/.bin:$PATH`
+    * Start watch and run lite server `npm run start`

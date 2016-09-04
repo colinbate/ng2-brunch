@@ -8,11 +8,12 @@
     "url": "https://github.com/colinbate/ng2-brunch"
   },
   "scripts": {
-    "start": "brunch watch --server",
+    "start": "brunch build && concurrently \"brunch watch\" \"npm run lite\"",
     "postinstall": "typings install",
     "build": "brunch build",
     "build:prod": "brunch build --production",
-    "test": "tsc --noEmit && tslint app/**/*.ts app/*.ts"
+    "test": "tsc --noEmit && tslint app/**/*.ts app/*.ts",
+    "lite": "lite-server --config=lite-server-test-config.json"
   },
   "license": "MIT",
   "keywords": [
@@ -47,9 +48,11 @@
     "brunch-typescript": "1.8.1",
     "clean-css-brunch": "^2.0.0",
     "codelyzer": "0.0.23",
+    "concurrently": "^2.2.0",
     "environment-brunch": "^1.0.0",
     "inline-css-brunch": "^2.0.0",
     "javascript-brunch": "^2.0.0",
+    "lite-server": "^2.2.2",
     "tslint": "^3.11.0",
     "typescript": "^1.8.10",
     "typings": "^1.1.0",
