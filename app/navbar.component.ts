@@ -1,10 +1,8 @@
 import {Component} from '@angular/core';
 import {Location} from '@angular/common';
-import {ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
   selector: 'navbar',
-  directives: [ROUTER_DIRECTIVES],
   styles: [`
     nav ul {
       list-style-type: none;
@@ -24,7 +22,6 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
       display: inline-block;
     }
     nav .active {
-
       background-color: #069;
       color: #fff;
     }
@@ -33,19 +30,15 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
     <nav>
       <ul>
         <li>
-          <a [routerLink]="['']" [class.active]="isActive('/')">Home</a>
+          <a [routerLink]="['home']" routerLinkActive="active">Home</a>
         </li>
         <li>
-          <a [routerLink]="['about']" [class.active]="isActive('/about')">About</a>
+          <a [routerLink]="['about']" routerLinkActive="active">About</a>
         </li>
       </ul>
     </nav>
   `
 })
 export class NavBarComponent {
-  constructor(public loc: Location) {}
-
-  isActive(path: string) {
-    return (this.loc.path() || '/') === path;
-  }
+  constructor() {}
 }

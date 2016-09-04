@@ -39,6 +39,10 @@ typings/globals
 typings/index.d.ts
 !typings/brunch-require.d.ts
 
+# no compiled js except brunch-config.js
+*.js
+!brunch-config.js
+
 # Intelij IDE
 .idea/
 *.iml
