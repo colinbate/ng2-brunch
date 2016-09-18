@@ -2,18 +2,17 @@
   "name": "ng2-brunch",
   "description": "Brunch with Angular 2",
   "author": "Colin Bate <colin@colinbate.com>",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/colinbate/ng2-brunch"
   },
   "scripts": {
-    "start": "brunch build && concurrently \"brunch watch\" \"npm run lite\"",
+    "start": "brunch watch --server",
     "postinstall": "typings install",
     "build": "brunch build",
     "build:prod": "brunch build --production",
-    "test": "tsc --noEmit && tslint app/**/*.ts app/*.ts",
-    "lite": "lite-server --config=lite-server-test-config.json"
+    "test": "tsc --noEmit && tslint app/**/*.ts app/*.ts"
   },
   "license": "MIT",
   "keywords": [
@@ -48,11 +47,9 @@
     "brunch-typescript": "1.8.1",
     "clean-css-brunch": "^2.0.0",
     "codelyzer": "0.0.23",
-    "concurrently": "^2.2.0",
     "environment-brunch": "^1.0.0",
     "inline-css-brunch": "^2.0.0",
     "javascript-brunch": "^2.0.0",
-    "lite-server": "^2.2.2",
     "tslint": "^3.11.0",
     "typescript": "^1.8.10",
     "typings": "^1.1.0",

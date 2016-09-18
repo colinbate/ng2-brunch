@@ -23,7 +23,3 @@ It uses the new [Angular 2 Forms][af] and [Component Router][cr]
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
     * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
-    
-* Test(Linux & Macosx):
-    * Export the local path to your current path with `export PATH=./node_modules/.bin:$PATH`
-    * Start watch and run lite server `npm run start`
