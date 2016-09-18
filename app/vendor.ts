@@ -7,10 +7,6 @@ import '@angular/platform-browser';
 import {enableProdMode} from '@angular/core';
 import 'rxjs';
 
-
-// if ('production' === 'BRUNCH_ENVIRONMENT') {
-//   let ngCore = require('@angular/core');
-//   ngCore.enableProdMode();
-if ('development' === 'BRUNCH_ENVIRONMENT') {
+if ('production' === 'BRUNCH_ENVIRONMENT') {
   enableProdMode();
 }

@@ -1,6 +1,4 @@
 import {Component} from '@angular/core';
-//import {ROUTER_DIRECTIVES} from '@angular/router';
-//import {NavBarComponent} from './navbar.component';
 
 /*
  * App Component
@@ -8,8 +6,6 @@ import {Component} from '@angular/core';
  */
 @Component({
   selector: 'app',
-  //directives: [...ROUTER_DIRECTIVES, NavBarComponent],
-  // pipes: [],
   styles: [`
     :host {
       font-family: sans-serif;

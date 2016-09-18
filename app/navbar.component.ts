@@ -30,15 +30,19 @@ import {Location} from '@angular/common';
     <nav>
       <ul>
         <li>
-          <a [routerLink]="['home']" routerLinkActive="active">Home</a>
+          <a [routerLink]="['']" [class.active]="isActive('/')">Home</a>
         </li>
         <li>
-          <a [routerLink]="['about']" routerLinkActive="active">About</a>
+          <a [routerLink]="['about']" [class.active]="isActive('/about')">About</a>
         </li>
       </ul>
     </nav>
   `
 })
 export class NavBarComponent {
-  constructor() {}
+  constructor(public loc: Location) {}
+
+  isActive(path: string) {
+    return (this.loc.path() || '/') === path;
+  }
 }
