@@ -30,10 +30,10 @@ import {Location} from '@angular/common';
     <nav>
       <ul>
         <li>
-          <a [routerLink]="['']" [class.active]="isActive('/')">Home</a>
+          <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
         <li>
-          <a [routerLink]="['about']" [class.active]="isActive('/about')">About</a>
+          <a routerLink="about" routerLinkActive="active">About</a>
         </li>
       </ul>
     </nav>
