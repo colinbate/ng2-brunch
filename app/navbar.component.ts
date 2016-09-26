@@ -39,10 +39,4 @@ import {Location} from '@angular/common';
     </nav>
   `
 })
-export class NavBarComponent {
-  constructor(public loc: Location) {}
-
-  isActive(path: string) {
-    return (this.loc.path() || '/') === path;
-  }
-}
+export class NavBarComponent {}
