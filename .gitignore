@@ -18,6 +18,7 @@
 .tmproj
 .idea
 .vs
+.vscode
 nbproject
 Thumbs.db
 
@@ -32,12 +33,6 @@ public/
 
 # Bower stuff.
 bower_components/
-
-# Typings
-# typings/
-typings/globals
-typings/index.d.ts
-!typings/brunch-require.d.ts
 
 *.map
 
