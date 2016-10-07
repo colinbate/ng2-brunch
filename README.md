@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/colinbate/ng2-brunch](https://badges.gitter.im/colinbate/ng2-brunch.svg)](https://gitter.im/colinbate/ng2-brunch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is an Angular 2.0.0 application, built with [Brunch](http://brunch.io).
+This is an Angular 2.0.2 application, built with [Brunch](http://brunch.io). It uses TypeScript 2.0.3
 
 > Note that this version of Angular 2 uses an updated module mechanism, along with forms and router which were introduced during the RC phase of the project. Do check out the [Angular 2 site](https://angular.io) if you want more info.
 
