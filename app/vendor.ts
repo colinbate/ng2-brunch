@@ -7,7 +7,7 @@ import '@angular/platform-browser';
 import {enableProdMode} from '@angular/core';
 import 'rxjs';
 
-const production = 'production';
+const production: string = 'production';
 if (production === 'BRUNCH_ENVIRONMENT') {
   enableProdMode();
 }

@@ -5,8 +5,11 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noEmitHelpers": false,
-    "sourceMap": true
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules",

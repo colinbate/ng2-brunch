@@ -21,6 +21,9 @@ exports.config = {
     inlineCss: {
       html: true,
       passthrough: [/^node_modules/, 'app/global.css']
+    },
+    brunchTypescript: {
+      ignoreErrors: true
     }
   }
 };

@@ -8,7 +8,8 @@ import {Component, OnInit} from '@angular/core';
 export default class HomeComponent implements OnInit {
   public title: any;
   constructor() {
-    this.title = { value: 'Angular 2' };
+    const initial = { value: 'Angular 2' };
+    this.title = { ...initial }; // Object spread in TypeScript 2.1!
   }
 
   ngOnInit() {
