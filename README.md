@@ -2,9 +2,7 @@
 
 [![Join the chat at https://gitter.im/colinbate/ng2-brunch](https://badges.gitter.im/colinbate/ng2-brunch.svg)](https://gitter.im/colinbate/ng2-brunch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is an Angular ^2.4.1 application, built with [Brunch](http://brunch.io). It uses TypeScript ^2.1.4
-
-> Note that due to a bug in TypeScript 2.1.4 the output to `npm test` will complain about missing `tslib`.
+This is an Angular ^2.4.5 application, built with [Brunch](http://brunch.io). It uses TypeScript ^2.1.5
 
 > This version does not pin a specific version of Angular as it did in the past. All Angular 2 versions should be non-breaking.
 
