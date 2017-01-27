@@ -1,11 +1,11 @@
 import {Routes, RouterModule} from '@angular/router';
 
-import {Home} from './home';
-import {About} from './about';
+import {HomeComponent} from './home';
+import {AboutComponent} from './about';
 
 export const routes: Routes = [
-  {path: '', component: Home, pathMatch: 'full'},
-  {path: 'about', component: About}
+  {path: '', component: HomeComponent, pathMatch: 'full'},
+  {path: 'about', component: AboutComponent}
 ];
 
 export const routing = RouterModule.forRoot(routes);

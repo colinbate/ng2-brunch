@@ -1,1 +1,1 @@
-export {default as About} from './about.component';
+export {AboutComponent} from './about.component';

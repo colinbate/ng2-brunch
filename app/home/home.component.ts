@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
   styles: [require('./home.component.css')],
   template: require('./home.component.html')
 })
-export default class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit {
   public title: any;
   constructor() {
     const initial = { value: 'Angular 2' };

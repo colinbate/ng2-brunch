@@ -3,6 +3,7 @@
     "node_modules/codelyzer"
   ],
   "rules": {
+    "arrow-return-shorthand": [true, "multiline"],
     "class-name": true,
     "comment-format": [
       true,
@@ -13,14 +14,19 @@
       true,
       "spaces"
     ],
+    "new-parens": true,
     "no-arg": true,
     "no-construct": true,
+    "no-debugger": true,
     "no-duplicate-variable": true,
     "no-eval": true,
     "no-internal-module": true,
+    "no-shadowed-variable": true,
+    "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
-    "no-use-before-declare": true,
+    "no-unused-new": true,
     "no-var-keyword": true,
+    "object-literal-shorthand": true,
     "one-line": [
       true,
       "check-catch",
@@ -57,7 +63,8 @@
       "check-decl",
       "check-operator",
       "check-separator",
-      "check-type"
+      "check-type",
+      "check-preblock"
     ],
     "directive-selector": [true, "attribute", "changeme", "camelCase"],
     "component-selector": [true, "element", "changeme", "kebab-case"],
